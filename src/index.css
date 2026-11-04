@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --gold-primary: #f0b232;
+    --gold-hover: #f7c34b;
+    --gold-dark: #b8861d;
+    --surface-bg: #0b0e14;
+    --surface-card: #121721;
+    --surface-elevated: #1a2232;
+    --surface-border: #242f45;
+  }
+}
+
+/* Custom scrollbar for timelines and panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(240, 178, 50, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 178, 50, 0.6);
+}
+
+/* Timeline ruler and tick marks */
+.timeline-ticks {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.25) 0px,
+    rgba(255, 255, 255, 0.25) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+}
+
+.timeline-ticks-major {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0px,
+    rgba(255, 255, 255, 0.5) 1px,
+    transparent 1px,
+    transparent 50px
+  );
+}
+
+/* Prevent unwanted browser behaviors during pinch/pan editing */
+.touch-pan-none {
+  touch-action: none;
+}

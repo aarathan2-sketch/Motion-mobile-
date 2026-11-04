@@ -1,0 +1,6 @@
+{
+  "name": "Motion Mobile - Professional Video & Motion Graphics Studio",
+  "description": "High-performance mobile video editor and motion-graphics studio combining multitrack timeline, keyframe animation, Bezier curves, GPU effects, custom node/shader studio, vector drawing, and professional export.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
